@@ -13,7 +13,5 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://bitbucket.org/omegaintercomunicadores/omegacom#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+  "devDependencies": {}
 }
