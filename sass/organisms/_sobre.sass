@@ -7,58 +7,94 @@ section.container
 		+align-items(center)
 		+make-sm-column(8)
 		+make-sm-column-offset(2)
-		margin: 30px auto 10px
+		margin: 30px auto 5px
 		height:  auto
 		background: 
 			color: #CBCBCB
+		padding: 10px
+
 
 	a
 		+flexbox
-		+align-items(center)
+		+align-items(right)
 		+make-sm-column(2)
 		+make-sm-column-offset(8)
+		float: right
 		color: $branco
 		font-weight: $bold
 		font-size: 14px
-		height: 25px
-		width: 400px
-		padding-left: 35px
+		padding: 5px 30px
+		margin: 0 0
 		background:
 			color: #676767
-		
-	
+			height: auto
+			width: 400px
+		&:hover
+			background:
+				color: #434343		
+
+	.margem
+		height: 30px
+		width: 100%
 	.produtos
 		+flexbox
+		+align-items(center)
 		+justify-content(space-around)
 		+make-sm-column(8)
 		+make-sm-column-offset(2)
-		margin: 30px 0
 		height: auto
 		width: auto
 		text-align: center
-		
+		margin: 5px 0 20px
+
+		+breakpoint($tablet)
+			display: block
+			
 		a
 			text-align: center
 			color: $branco
 			font-weight: $bold
 			font-size: 16px
-			height: 25px
+			height: auto
 			width: 220px
 			background:
 				color: #676767
-			margin: 5px 10px
-			padding-left: 75px
+			margin: 0px 10px
+			padding: 10px
+			display: block
+			&:hover
+				background:
+					color: #434343
+
+		[class^="titulo-"]
+			font-weight: $bold
+			text-align: center
+			height: 25px
+			width: 220px
+			color: $branco
+			font-size: 16px
+			background-color:#28408E 
+			margin: 5px 10px 0
+			
 
 		[class^="produto-"]
 			width: 240px
+			height: auto
+			margin: 10px 0
+			+breakpoint($tablet)
+				display: inline-block
+				margin: 10px 10px 10px
+
 
 
 		[class^="texto-"]
 			color: $preto
-			margin: 10px 10px
+			margin: 0px 10px 10px
 			width: 220px
-			height: 340px
+			height: 250px
 			background-color: #CBCBCB
+			padding: 10px
+			text-align: left
 
 		img
 			width: 220px

@@ -27,19 +27,27 @@ footer
 		text-align: center
 		 
 		p
-			margin: 23px 0
+			margin: 23px auto
 			color: $branco
 			text-align: center
-			padding-left: 100px 
+			padding-left: 100px
+			float: center 
+
+			+breakpoint($tablet)
+				padding-left: 0
 
 		[class^="icone-"]
-			
+						
 			display: inline-block	
 			float: right
 			font-size: 50px
-			color: $branco
 			margin: 0 5px
+			a
+				color: $branco
 
+			+breakpoint($tablet)
+				padding: 0 22px		
+	
 	.logo-rodape
 		img
 			width: 60px
@@ -47,3 +55,9 @@ footer
 			display: block
 			float: left
 			margin: 5px 0
+		+breakpoint($tablet)
+			float: center
+			width: 80px
+			margin: 0 auto 
+			height: 80px
+			padding-left: 10px
