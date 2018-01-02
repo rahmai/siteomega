@@ -1,0 +1,51 @@
+@import molecules/textos 
+
+header
+	min-height: 290px
+	margin: 0 0 25px
+.socios
+	+make-sm-column(8)
+	+make-sm-column-offset(2)
+	margin: 20px 0
+.textos
+	background-color: #CBCBCB
+
+.fundadores
+	+make-sm-column(8)
+	+make-sm-column-offset(2)
+	background-color: #28408E 
+	margin: 20px 0 0
+	color: $branco
+	font-weight: $bold
+	font-size: 20px
+	text-align: center
+	padding: 10px 0 2px
+
+section.container
+
+	
+	[class^= socio-]
+		
+		.titulo
+			
+			font-weight: $bold
+			text-align: center
+			height: 30px
+			color: $branco
+			font-size: 16px
+			background-color:#28408E 
+			padding: 3px
+	
+
+		+make-sm-column(4)
+		//+make-sm-column-offset(1)
+		margin: 0 0%
+	
+		img
+			max-height: 140px
+			
+		p 
+			background-color: #CBCBCB
+			padding: 10px
+			text-align: left
+
