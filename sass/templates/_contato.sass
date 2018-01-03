@@ -1,0 +1,103 @@
+@import molecules/textos 
+header
+	min-height: 290px
+	margin: 0 0 25px
+
+
+.formulario
+	
+	margin: 20px 0
+
+
+section.container
+
+
+	form
+
+		+clearfix
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		margin-bottom: 20px
+		
+		.botao
+			+make-sm-column(12)
+			
+			button
+				display: block
+				font-size: 16px
+				font-weight: $bold
+				padding: 3px
+				height: 35px
+				width: 100%
+				background-color: $cinza-medio
+				color: $branco
+				margin-bottom: 20px
+				text-align: center
+				border: 3px solid transparent
+				&:hover
+					background-color: $cinza-escuro
+
+
+	.colunas
+		+make-row
+		+make-sm-column(6)
+
+	.col
+		+make-sm-column(12)
+
+	.dados
+		+make-sm-column(6)			
+		.titulo
+			background-color: $azul
+			width: 100%
+			text-align: center
+			font-weight: $bold
+			color: $branco
+			padding: 3px 
+		p
+			text-align: left
+			font-size: 16px
+			padding: 0 10px
+		.info
+			background-color: $cinza-claro
+
+		i
+			font-size: 100px
+			margin: 0 4px
+			color: $cinza-escuro
+		[class^= "fa fa-facebook-square"]
+			+transition(.3s)
+			&:hover
+				color: $azul
+
+		[class^= "fa fa-wordpress"]
+			+transition(.3s)
+			&:hover
+				color: $preto
+
+		[class^= "fa fa-youtube-square"]
+			+transition(.3s)
+			&:hover
+				color: #C50000
+
+		[class^= "icone-"]
+			display: inline-block
+			float: center
+
+	.txtaviso
+		+make-sm-column(12)
+		
+		text-align: center
+
+
+
+	input,
+	select,
+	textarea,
+		width: 100%
+	textarea
+		min-height: 100px
+
+
+
+	

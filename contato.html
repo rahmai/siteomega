@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Omega Intercomunicadores</title>
+		<link rel="stylesheet" href="css/geral.css">
+		<link rel="stylesheet" href="css/plugins.css">
+		<link rel="stylesheet" href="css/contato.css">
+
+	</head>
+
+	
+		<body>
+
+			<nav class="menu-responsivo">
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="clientes.html">Clientes</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+			
+			
+		<div class="layout">
+			<header>
+
+				<div class="container">
+					<div class="logo">
+					 <a href="index.html">
+					 	<img src="../images/Logo/logo-completo.svg" alt="Logo Topo Tag">
+					 </a>	
+					</div>
+
+					<div class="links">
+						<nav>
+							<ul>
+								<li><a href="index.html">Início</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="produtos.html">Produtos</a></li>
+								<li><a href="noticias.html">Noticias</a></li>
+								<li><a href="clientes.html">Clientes</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</nav>
+						<a href="javascript:;" class="toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						
+
+					</div>
+
+					<h1><p>Fale conosco</p></h1>
+				</div>
+			
+			</header>
+			
+			<main>
+				
+				<section class="container">
+					<div class="formulario">
+						<form >
+							<div class="colunas">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" placeholder="Nome" required>
+									</div>
+									</div>
+									<div class="col">
+										<div class="form-group">
+											<input type="text" placeholder="E-mail" required>
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group">
+											<input type="text" placeholder="Telefone">
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group">
+											<input type="text" placeholder="Empresa">
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group">
+											<textarea placeholder="Preencha suas duvidas"></textarea>
+										</div>
+									</div>
+
+									<div class="botao">
+										<div class="form-group">
+											<button class="botaoe">
+												Enviar Contato		
+											</button>
+										</div>
+									</div>
+									<div class="txtaviso">
+										
+										<p class="bg-success"><i class="fa fa-info-circle"></i> Seu contato foi enviado com sucesso.</p>
+										<p class="bg-danger"><i class="fa fa-info-circle"></i> Preencha todos os campos obrigatórios.</p>
+									</div>
+								</div>
+
+
+							<div class="dados">
+								<div class="col">
+									<p class="titulo">Contato direto</p>
+									<div class="info">								
+										<p class="telefone"><strong>Tel.:</strong> (11) 2000-0002  </p>
+										<p class="watsapp"><strong>Watsapp:</strong> (11) 94000-0004</p>
+										<p class="email"><strong>E-mail:</strong> omegacom@gmail.com</p>
+									</div>
+								</div>
+								<div class="col">
+									<p class="titulo">Redes Sociais</p>
+									<p class="icones">
+										
+									<div class="icone-facebook">
+										<a href="#"><i class="fa fa-facebook-square"></i></a>
+									</div>
+									<div class="icone-wordpress">
+										<a href="#"><i class="fa fa-wordpress"></i></a>
+									</div>						
+						
+									<div class="icone-youtube">
+										<a href="#"><i class="fa fa-youtube-square"></i></a>					
+									</div>
+									</p>
+								</div>
+							</div>		
+						</form>
+					</div>		
+				</section>
+				
+			</main>
+
+			<footer>
+				<section class="rodape">
+					<div class="container">
+						<div class="faixa-rodape">
+							<div class="logo-rodape">
+								<a href="index.html">
+									<img src="../images/Logo/logo-circulo.svg" alt="logo-tag-rodape">
+								</a>
+							</div>
+
+							<p> Nos encontre tambem nas redes sociais !</p>
+
+
+						
+							<div class="icone-facebook">
+								<a href="#"><i class="fa fa-facebook-square"></i></a>
+							</div>
+							<div class="icone-wordpress">
+								<a href="#"><i class="fa fa-wordpress"></i></a>
+							</div>						
+						
+							<div class="icone-youtube">
+								<a href="#"><i class="fa fa-youtube-square"></i></a>					
+							</div>
+							
+							
+						</div>
+					</div>	
+				</section>
+
+				<div class="direitos"><p>2018 Todos os diteitos reservado.</p></div>
+				
+				</div>
+			</footer>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script>
+			$(function(){
+			
+				$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			})
+		})
+		</script>
+	</body>
+</html>

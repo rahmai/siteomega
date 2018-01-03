@@ -46,7 +46,22 @@ footer
 				color: $branco
 
 			+breakpoint($tablet)
-				padding: 0 22px		
+				padding: 0 22px	
+
+		[class^= "fa fa-facebook-square"]
+			+transition(.3s)
+			&:hover
+				color: $azul
+
+		[class^= "fa fa-wordpress"]
+			+transition(.3s)
+			&:hover
+				color: $cinza-medio
+
+		[class^= "fa fa-youtube-square"]
+			+transition(.3s)
+			&:hover
+				color: #C50000
 	
 	.logo-rodape
 		img

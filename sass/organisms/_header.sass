@@ -1,4 +1,11 @@
+i
+		font-size: 30px
+		color: $branco
+		display: block
+		float: right
 header
+	
+	
 	+clearfix
 	min-height: 315px
 	position: relative
@@ -19,9 +26,13 @@ header
 			height: 60px
 
 	.links
+		
+		
 		margin: 45px 0 0
 		float: right
 		nav
+			+breakpoint($tablet)
+				display: none
 			ul
 				li
 					display: inline-block
