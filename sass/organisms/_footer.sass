@@ -1,0 +1,78 @@
+footer
+	section.rodape
+		background-color: $preto
+		width: 100%
+		height: auto
+
+	+gradient(0deg, $preto ,transparent)
+
+	p
+
+		display: inline-block
+		float: middle 
+		margin: 60px 0
+		font-weight: $bold
+		color: $preto
+
+
+	.direitos
+		text-align: center
+
+
+	.faixa-rodape
+
+
+		width: auto
+		height: 70px
+		text-align: center
+		 
+		p
+			margin: 23px auto
+			color: $branco
+			text-align: center
+			padding-left: 100px
+			float: center 
+
+			+breakpoint($tablet)
+				padding-left: 0
+
+		[class^="icone-"]
+						
+			display: inline-block	
+			float: right
+			font-size: 50px
+			margin: 0 5px
+			a
+				color: $branco
+
+			+breakpoint($tablet)
+				padding: 0 22px	
+
+		[class^= "fa fa-facebook-square"]
+			+transition(.3s)
+			&:hover
+				color: $azul
+
+		[class^= "fa fa-wordpress"]
+			+transition(.3s)
+			&:hover
+				color: $cinza-medio
+
+		[class^= "fa fa-youtube-square"]
+			+transition(.3s)
+			&:hover
+				color: #C50000
+	
+	.logo-rodape
+		img
+			width: 60px
+			height: 60px
+			display: block
+			float: left
+			margin: 5px 0
+		+breakpoint($tablet)
+			float: center
+			width: 80px
+			margin: 0 auto 
+			height: 80px
+			padding-left: 10px

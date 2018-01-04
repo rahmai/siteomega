@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Omega Intercomunicadores</title>
+		<link rel="stylesheet" href="css/geral.css">
+		<link rel="stylesheet" href="css/plugins.css">
+		<link rel="stylesheet" href="css/noticias.css">
+
+	</head>
+	<body>
+		<nav class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="produtos.html">Produtos</a></li>
+				<li><a href="noticias.html">Noticias</a></li>
+				<li><a href="clientes.html">Clientes</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+			
+		<div class="layout">
+	
+		<header>
+
+			<div class="container">
+				<div class="logo">
+				 <a href="index.html">
+				 	<img src="../images/Logo/logo-completo.svg" alt="Logo Topo Tag">
+				 </a>	
+				</div>
+
+				<div class="links">
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="produtos.html">Produtos</a></li>
+							<li><a href="noticias.html">Noticias</a></li>
+							<li><a href="clientes.html">Clientes</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
+						<a href="javascript:;" class="toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+				</div>
+
+				<h1><p>Noticias</p></h1>
+			</div>
+		
+		</header>
+		
+		<main>
+			
+			<section class="container">
+				<dov class="aviso">
+					<p><strong>Desculpe o incomodo</strong></p>
+					<p class="texto">Pagina em construção</p>	
+				</dov>
+			</section>
+			
+		</main>
+
+		<footer>
+			<section class="rodape">
+				<div class="container">
+					<div class="faixa-rodape">
+						<div class="logo-rodape">
+							<a href="index.html">
+								<img src="../images/Logo/logo-circulo.svg" alt="logo-tag-rodape">
+							</a>
+						</div>
+
+						<p> Nos encontre tambem nas redes sociais !</p>
+
+
+					
+						<div class="icone-facebook">
+							<a href="#"><i class="fa fa-facebook-square"></i></a>
+						</div>
+						<div class="icone-wordpress">
+							<a href="#"><i class="fa fa-wordpress"></i></a>
+						</div>						
+					
+						<div class="icone-youtube">
+							<a href="#"><i class="fa fa-youtube-square"></i></a>					
+						</div>
+						
+					</div>
+				</div>	
+			</section>
+
+				<div class="direitos"><p>2018 Todos os diteitos reservado.</p></div>
+				
+			</div>
+		</footer>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+			
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			})
+		})
+	</script>
+		
+	</body>
+</html>

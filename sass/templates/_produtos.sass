@@ -1,0 +1,96 @@
+section.container
+	+flexbox
+
+	.tela
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		
+	
+		.descricao
+			+make-sm-column(7)
+			margin: 20px 0px
+			display: block
+			float: right
+			+breakpoint($tablet)
+				+make-sm-column(10)
+			.titulo
+				color: $branco
+				text-align: center
+				font-size: 17px
+				width: 100%
+				height: auto
+				background-color: $azul
+				font-weight: $bold
+				display: block
+				p
+					padding: 2px 
+			.des
+				p
+					color: $preto
+					text-align: left
+					font-size: 16px
+					width: auto
+					height: auto
+					background-color: $cinza-claro
+					margin: 13px 0
+					padding: 10px
+
+
+			
+			img
+				width: 120px
+				height: 120x
+				float: left
+				margin: 20px
+
+		.produtos
+			+make-sm-column(4)
+			display: block
+			margin: 20px 0px
+			float: left
+			+breakpoint($tablet)
+				+make-sm-column(10)
+				width: 100%
+		
+			[class^= "pro-"]
+				
+				width: 100%
+				height: auto
+
+
+				p
+					color: $branco
+					text-align: center
+					font-size: 16px
+					background-color: $azul
+					font-weight: $bold
+					padding: 3px 
+					display: block
+						
+						
+				
+				nav
+					ul
+						li
+							display: block
+							background-color: $cinza-medio
+							float: center
+							border: 2px solid $branco
+							text-align: center
+							
+							+breakpoint($tablet)
+								display: inline-block
+								width: 100%
+
+							&:hover
+								background-color: $cinza-escuro
+		
+							a
+								color: $branco
+								text-align: center
+								font-size: 16px
+								font-weight: $bold
+								padding: 3px
+								float: center
+
+
